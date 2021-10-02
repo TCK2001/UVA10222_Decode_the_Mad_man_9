@@ -16,22 +16,22 @@ int main()
 {
 	string input;
 	string kb=" `1234567890-=qwertyuiop[]asdfghjkl;'zxcvbnm,./";
-	while(getline(cin,input)) //°ø¹éµµ ÃÄ¸®ÇØ¾ß ÇÏ¹Ç·Î getlineÀ¸·Î Ã³¸®; 
+	while(getline(cin,input)) //ê³µë°±ë„ ì³ë¦¬í•´ì•¼ í•˜ë¯€ë¡œ getlineìœ¼ë¡œ ì²˜ë¦¬; 
 	{
 		for(int i=0;i<input.length();i++)
 		{
-			if(input[i]>='A'&&input[i]<='Z') //´ë¹®ÀÚ ÀÔ·Â½Ã ¼Ò¹®ÀÚ·Î º¯È¯; 
+			if(input[i]>='A'&&input[i]<='Z') //ëŒ€ë¬¸ì ì…ë ¥ì‹œ ì†Œë¬¸ìë¡œ ë³€í™˜; 
 			{
 				input[i]=input[i]+32;	
 			}
 			for(int j=0;j<kb.length();j++)
 			{
-				if(input[i]==kb[0]) //ÀÖ¾îµµ ¾ø¾îµµ º° Â÷ÀÌ ¾È³ª´Âµí; 
+				if(input[i]==kb[0]) //ìˆì–´ë„ ì—†ì–´ë„ ë³„ ì°¨ì´ ì•ˆë‚˜ëŠ”ë“¯; 
 				{
 					cout<<" ";
 					break;
 				}
-				else if(input[i]==kb[j]) //°°À¸¸éÀº 2¹ø¤Š Àü°Å Ãâ·Â; 
+				else if(input[i]==kb[j]) //ê°™ìœ¼ë©´ì€ 2ê°œ ì „êº¼ ì¶œë ¥; 
 				{
 					cout<<kb[j-2];
 					break;
