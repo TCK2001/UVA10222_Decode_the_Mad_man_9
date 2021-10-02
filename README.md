@@ -9,7 +9,7 @@ if(input[i]>='A'&&input[i]<='Z') //대문자 입력시 소문자로 변환;
 ```
 #### First we have to change the A...Z to a...z,so we plus 32;
 ```c++
-else if(input[i]==kb[j]) //같으면은 2번 전거 출력; 
+else if(input[i]==kb[j]) //같으면은 2개 전꺼 출력; 
 {
   cout<<kb[j-2];
   break;
